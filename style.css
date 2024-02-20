@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Righteous, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(45deg,
+            rgb(66, 19, 143),
+            rgb(0, 0, 0));
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: #180738;
+    min-height: 50px;
+}
+
+nav {
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 4;
+    font-size: 25px;
+    gap: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(188, 241, 128);
+}
+
+p {
+    color: white;
+}
+
+.p-linguagens {
+    background: linear-gradient(to right, #f4f7f3, #127096);
+    background-clip: text;
+    /* Aplica o gradiente ao texto */
+    -webkit-text-fill-color: transparent;
+}
+
+
+.container {
+    text-align: center;
+
+}
+
+/* display: flex; */
+
+.box {
+    flex: 1;
+    border: 1px solid #200552;
+    /* Adicione uma borda para visualização */
+    margin: 30px;
+    /* Adicione margens para espaçamento entre as divs */
+    /* display: flex; */
+}
+
+.box2 {
+    flex: 1;
+    border: 1px solid #200552;
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(196, 202, 185);
+
+}
+
+a:hover {
+    color: rgb(244, 248, 10);
+    transition: .4s;
+}
+
+a:visited {
+    color: red,
+}
+
+/* Arredondar imagem perfil*/
+.perfilpic {
+    border-radius: 50%;
+
+}
+
+/* posicionar palavra em cima da logo*/
+.img-linguagem {
+    display: flex;
+    /* Torna os itens filhos flexíveis */
+    justify-content: center;
+    /* Centraliza os elementos dentro */
+}
+
+.image-logo {
+    vertical-align: middle;
+    /* Alinha verticalmente as imagens */
+    width: 40%;
+    /*tamanho da imagem logo de linguagens*/
+}
+
+.linguagem-text {
+    text-align: center;
+    /* Alinha o texto centralmente */
+    margin-right: 10px;
+    /* colocar distancia entre as imagens */
+}
+
+.projeto-img {
+    text-align: center;
+    /* Alinha o texto centralmente */
+
+}
+
+.topo {
+    position: fixed;
+    /* Tornar a posição fixa na janela de visualização */
+    bottom: 0;
+    /* Alinhar na parte inferior */
+    right: 0;
+    /* Alinhar à direita */
+    margin: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #200552
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(72, 72, 73);
+}
