@@ -3,5 +3,5 @@
 
 Portifólio simples com uso de HTML E CSS
 
-(home.png)
+<img src"home.png">
 </center>
