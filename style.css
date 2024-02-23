@@ -157,10 +157,17 @@ a:visited {
     display: none;
 }
 
+#btn-menu {
+    display: none;
+}
 
 /* RESPONSIVIDADE em resoluções menores */
 
 @media screen and (max-width: 800px) {
+
+    #btn-menu {
+        display: block;
+    }
 
     /* Menu */
     .menu {
@@ -172,18 +179,18 @@ a:visited {
 
         backdrop-filter: blur(10px);
         position: absolute;
-        top: 48px;
+        top: 68px;
         left: 0;
         width: 100%;
-        height:34vh;
+        height: 34vh;
 
         display: block;
         padding: 10px 20px;
         visibility: hidden;
     }
 
-    .link-contato {
-        flex-direction: column;
+    .texto-ao-lado {
+        color: #f4f7f3;
     }
 
 
@@ -219,17 +226,17 @@ a:visited {
 
 
     #btn-menu.ativo {
-        border: 2px solid yellow;
+        border: 2px solid #ffff;
     }
 
     #btn-menu.ativo .linha:nth-child(1) {
         transform: translateY(8px) rotate(-45deg);
-        background-color: aqua;
+        background-color: rgb(255, 0, 0);
     }
 
     #btn-menu.ativo .linha:nth-child(3) {
         transform: translateY(-8px) rotate(45deg);
-        background-color: aqua;
+        background-color: rgb(255, 0, 0);
     }
 
     #btn-menu.ativo .linha:nth-child(2) {
@@ -251,7 +258,35 @@ a:visited {
         visibility: visible;
         height: calc(100vh-48px);
     }
+}
+
+@media screen and (max-width: 800px) {}
 
 
+
+@media screen and (min-width: 760px) and (max-width: 800px) {
+    .perfilpic {
+        width: 50%;
+
+    }
+
+    #btn-menu {
+        display: block;
+    }
+
+    .menu-mobile {
+        font-size: small;
+
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        height: 25vh;
+
+        display: block;
+        padding: 10px 20px;
+        visibility: hidden;
+    }
 
 }
