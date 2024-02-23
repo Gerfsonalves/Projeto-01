@@ -28,7 +28,7 @@ header {
     min-height: 50px;
 }
 
-nav {
+.menu {
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -100,7 +100,7 @@ a:visited {
 /* Arredondar imagem perfil*/
 .perfilpic {
     border-radius: 50%;
-
+    width: 23%
 }
 
 /* posicionar palavra em cima da logo*/
@@ -151,4 +151,107 @@ a:visited {
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(72, 72, 73);
+}
+
+.menu-mobile {
+    display: none;
+}
+
+
+/* RESPONSIVIDADE em resoluções menores */
+
+@media screen and (max-width: 800px) {
+
+    /* Menu */
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        font-size: small;
+
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 100%;
+        height:34vh;
+
+        display: block;
+        padding: 10px 20px;
+        visibility: hidden;
+    }
+
+    .link-contato {
+        flex-direction: column;
+    }
+
+
+    /* Imagem perfil acima do texto */
+    .box2 {
+        flex-direction: column-reverse;
+    }
+
+
+    /* Mudar tamanho da foto perfil */
+
+    .perfilpic {
+        width: 80%;
+    }
+
+    /* TAMANHO DAS LOGO */
+
+    .image-logo {
+        width: 50%;
+    }
+
+    /* linha do botão menu */
+    .linha {
+        position: relative;
+        height: 3px;
+        background: #f4f7f3;
+        width: 25px;
+        display: block;
+        margin: 5px auto;
+        transform-origin: center;
+        transition: .2s;
+    }
+
+
+    #btn-menu.ativo {
+        border: 2px solid yellow;
+    }
+
+    #btn-menu.ativo .linha:nth-child(1) {
+        transform: translateY(8px) rotate(-45deg);
+        background-color: aqua;
+    }
+
+    #btn-menu.ativo .linha:nth-child(3) {
+        transform: translateY(-8px) rotate(45deg);
+        background-color: aqua;
+    }
+
+    #btn-menu.ativo .linha:nth-child(2) {
+        width: 0;
+    }
+
+    #btn-menu {
+        background: transparent;
+        width: 45px;
+        height: 50px;
+        outline: none;
+        cursor: pointer;
+        border: 2px solid #ffff;
+        transition: .2s;
+
+    }
+
+    .menu-mobile.abrir {
+        visibility: visible;
+        height: calc(100vh-48px);
+    }
+
+
+
 }
